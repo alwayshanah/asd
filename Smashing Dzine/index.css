@@ -1,0 +1,15 @@
+#wrapper {
+	background: url('body-bg.jpg');
+}
+
+#banner {
+	display: flex;
+	max-width: 1200px;
+	margin: 80px;
+}
+
+#quick-quote {
+	background: url('form-bg.jpg');
+	margin: 20px;
+	padding: 10px 50px 10px 50px
+}

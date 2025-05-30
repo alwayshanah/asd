@@ -1,0 +1,103 @@
+#usep, #container {
+    font: 14px tahoma;
+    width: 100%;
+    margin: 0px auto;
+}
+
+#header {
+    background: #099;
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+}
+
+#header h1{
+    background-color: #099;
+    max-width: 1200px;
+    height: 250px;
+    margin: 0px auto;
+    color: white;
+}
+
+h2, h3 {
+    color: skyblue !important;
+}
+
+#header img, #header span {
+    float: left;
+    padding-top: 5px;
+}
+
+#header span {
+    padding: 110px 20px;
+}
+
+#main {
+    max-width: 1200px;
+    margin: 0px auto;
+    position: relative;
+}
+
+#award {
+    position: absolute;
+    top: -100px;
+    left: 685px;
+    transform: rotate(12deg);
+}
+
+#intro {
+    max-width: 950px;
+    margin-bottom: 5px;
+    margin: 0px auto;
+    float: left;
+    margin-left: 5px;   
+}
+
+#vms, #goals{
+    margin-left: 5px;
+    line-height: 1rem;
+    text-align: justify;
+}
+
+#vision .p3 {
+    margin-left: 340px !important;
+    width: 360px !important;
+    border: dotted 3px !important;
+    border-color: royalblue !important;
+}
+
+#profile {
+    background:lightcyan;
+    max-width:210px;
+    max-height: 1200px;
+    float: left;
+    margin-right: 20px;
+    line-height: 1.7rem;
+    padding: 20px;
+    text-wrap: stable;
+}
+
+#linklist {
+    background: url(book.png) repeat-x top right lightcyan;
+    padding-top: 30px;
+    padding-left: 10px;
+    background-position: relative;
+    max-width: 200px;
+    margin: 0px auto;
+    float: right;
+}
+
+#coupon img {
+    position: fixed;
+    left: -15px;
+    bottom: 300px;
+}
+
+#footer {
+    clear:both;
+    color: white;
+    background: #088F8F; 
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+ }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links List</title>
+    <style>
+        a {
+            text-decoration: none; 
+            color: black;
+            font-size: 14px;
+        }
+        a:hover {
+            background-color: maroon;
+            color: white;
+            font-style: italic;
+            font-size: 16px;
+        }
+        a:active {
+            text-decoration: underline;
+            color: black;
+        }
+        a:visited {
+            color: green;
+        }
+        #archive a {
+            color: blue;
+            text-decoration: underline;
+        }
+        #archive a:hover {
+            background-color: lightgray;
+            color: navy;
+            font-size: 16px;
+        }
+        #resources {
+            list-style-type: none; 
+            padding-left: 0; 
+        }
+        #resources li {
+            display: flex; 
+            align-items: center; 
+            padding-left: 20px; 
+        }
+        #resources li img {
+            width: 20px; 
+            height: 20px; 
+            margin-right: 10px; 
+        }
+        #archive li {
+            list-style-type: lower-alpha;
+        }
+    </style>
+</head>
+<body>
+    <h2>Resources</h2>
+    <ul id="resources">
+        <li><img src="elib.png" alt="icon"><a href="https://www.brooksfreelibrary.org/elibrary/">E-Library</a></li>
+        <li><img src="brary.png" alt="icon"><a href="https://en.wikipedia.org/wiki/Ebrary">E-brary</a></li>
+        <li><img src="opaque.png" alt="icon"><a href="https://www.merriam-webster.com/dictionary/opaque#:~:text=Kids%20Definition-,opaque,letting%20light%20through%20%3A%20not%20transparent">Opaque</a></li>
+    </ul>
+
+    <h2>Archive</h2>
+    <ul id="archive">
+        <li><a href="https://drive.google.com/drive/my-drive">Google Drive</a></li>
+        <li><a href="https://www.merriam-webster.com/dictionary/copy">Copy</a></li>
+        <li><a href="https://www.dropbox.com/">Dropbox</a></li>
+    </ul>
+</body>
+</html>

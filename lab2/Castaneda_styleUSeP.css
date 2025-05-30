@@ -1,0 +1,52 @@
+h1 {
+    display: flex; 
+    align-items: center; 
+    gap: 25px; 
+    font-style: bold;
+}
+
+h1::before {
+    content: ""; 
+    display: inline-block;
+    width: 200px; 
+    height: 200px; 
+    background-image: url('logo.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    font-family: tahoma;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+#header h2 span {
+  color: skyblue;
+  background-repeat: non-repeat;
+}
+
+#vision h3 span {
+  color: skyblue;
+}
+
+#mission h3 span {
+  color: skyblue;
+}
+
+#goals h3 span {
+  color: skyblue;
+}
+
+#mission p.p1 {
+    margin: 10px; 
+    padding: 20px; 
+    background-color: skyblue; 
+    border: 2px dashed blue; 
+    background-image: url('spark.gif'); 
+    background-repeat: no-repeat;
+    background-size: 80px 80px; 
+    background-position: right center; 
+    padding-right: 100px; 
+}

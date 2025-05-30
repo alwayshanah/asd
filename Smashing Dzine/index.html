@@ -1,0 +1,402 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-image: url('image/body-bg.jpg');
+            background-repeat: repeat-x;
+            background-size: 100% 650px;
+            padding-top: 40px;
+        }
+        body, html {
+		   	margin: 0;
+   			padding: 0;
+   			height: 100%;
+		}
+        #wrapper { 
+            max-width:  1200px; 
+            margin: 0 auto;
+            background: transparent;
+            position: relative;
+        }
+		 #header ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: absolute;
+            margin-top: 4px;
+            padding:  0px;
+            position: relative;
+        }
+        #logo img {
+            padding: 35px
+        }
+        #nav ul {
+            list-style: none;
+            display: flex;
+            position: absolute;
+        }
+        #nav ul li {
+            margin-left: 30px;
+        }
+  		#nav ul li a {
+            text-decoration: none;
+            color: black;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        #nav #home {
+		    color:white;
+		    background:	url('image/nav-mid.jpg')  repeat-x, 
+		    url('image/nav-left.jpg') no-repeat left, 
+		    url('image/nav-right.jpg') no-repeat right;
+		    border-top-left-radius: 10px;
+		    border-top-right-radius: 10px;
+		    padding:9px 20px;
+		}
+		#slideshow img {
+            width: 800px;
+            height: 361px;
+            margin: 10px;    
+        }
+        #banner {
+   			display: flex;
+    		margin-top: 90px;
+    		align-items: flex-start;
+    		color: white;
+            max-width: 1200px; 
+	  		background: white;
+	    }
+	    #quick-quote {
+            background-image: url('image/form-bg.jpg'); 
+            background-repeat: no-repeat; 
+            background-size: cover; 
+            background-position: center; 
+            padding: 20px; 
+            margin-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 410px;
+            min-height: 362px; 
+            font-size: 14px;
+	       font-family: Verdana, sans-serif;
+        }
+        #quick-quote h2, #in{
+   		 	margin-bottom: 15px;
+    		font-weight: normal; 
+    		font-family: Verdana, sans-serif;
+        }
+        #quick-quote input, #quick-quote #in {
+            width: 100%;
+            padding: 9px;
+            margin-bottom: 5px;
+        }
+        #quick-quote #btn {
+	       background-image:linear-gradient(#757474, black);
+	       margin-top:0px;
+	       margin-bottom: 0px;
+	       width:100px;
+	       min-height: ;
+	       padding:8px;
+	       color:white;
+	       font-family: Verdana, sans-serif;
+        }
+        .box {
+            background-image: linear-gradient(lightgrey, white);
+            outline: gray;
+            margin-top: 70px;
+            padding: 20px;
+            color: black;
+            width: 400px;
+            font-weight: normal;
+            font-family: Verdana, sans-serif;
+            position: relative; 
+            overflow: hidden; 
+        }
+        .ylw {
+            color: goldenrod;
+            font-weight: normal;
+            font-family: Verdana, sans-serif;
+        }
+        .placeholder {
+            width: 75px;
+            height: 75px;
+            background-color: lightgray;
+            border: 2px solid lightgrey;
+            outline: 2px solid lightgrey;
+            outline-offset: 3px;
+            float: right; 
+            margin-left: 20px; 
+        }
+        #main{display: flex; 
+	        height: 250px;
+            font-size: 12px;
+	        gap: 40px
+        }
+        #main h2 { 
+            font-weight: normal; 
+	        font-size: 20px;
+            font-family: Verdana, sans-serif;
+            padding-bottom:  20px;
+        }
+        a {
+            color: black;
+            text-decoration: underline;
+            font-size: 15px;
+            line-height: 50px;
+            font-weight: bold;
+        }
+        #footer {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            background-image: url('image/footer-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            height: 100px;
+            color: white;
+            padding: 20px;
+            line-height: 2;
+            letter-spacing: -0.5px;
+            font-size: 12px;
+            font-family: verdana, sans-serif;
+        }
+        #footer-left {
+            flex: 2; 
+            margin-left: 340px;
+        }
+        #footer-right {
+            flex: 1;
+            margin-right: 200px;
+        }
+        #footer-right input[type="text"] {
+            padding: 5px;
+            width: 170px;
+            height: 40px;
+        }
+        #sbscrb {
+            padding: 5px 10px;
+            background-image:linear-gradient(#757474, black);
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 0px;
+            height: 40px;
+        }
+
+    @media screen and (max-width: 768px) {
+        #wrapper {
+            width: 100%;
+            padding: 0 10px;
+        }
+        #header ul {
+            flex-direction: row;
+            text-align: left;
+            display: flex;
+            justify-content: left;
+        }
+        #nav ul {
+            flex-direction: row;
+            text-align: left;
+            position: relative;
+            display: flex;
+            justify-content: left;
+        }
+        #nav ul li {
+            margin: 0px auto;
+            font-size: 7px;
+        }
+        #banner {
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+        }
+        #slideshow img {
+            width: 100%;
+            height: auto;
+        } 
+        #quick-quote {
+            width: 100%;
+        }
+        #main {
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+            gap: 20px;
+        }
+        .box {
+            width: 90%;
+            text-align: center;
+        }
+        .placeholder {
+            display: block;
+            margin: 10px auto;
+        }
+        #footer {
+            flex-direction: column;
+            text-align: center;
+            height: auto;
+            padding: 20px;
+        }
+        #footer-left {
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+        #footer-right {
+            margin-right: 0;
+        }
+    }
+
+@media screen and (max-width: 768px) {
+    #nav ul {
+        flex-direction: row;
+        padding: 0;
+        flex-direction: row;
+    }
+    #banner {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    #nav ul li a {  
+        font-size: 11px;
+    }
+    #nav ul li {
+        margin: 0px auto;
+        font-size: 7px;
+    }
+    #slideshow img , #quick-quote {
+        width: 95%;
+    }
+    #main {
+        flex-direction: column;
+        text-align: left;
+        padding-top: 0px;
+    }
+    #AboutSD {
+        text-align: left;
+        margin-top: 50px;
+    }
+    #OurSrvs {
+        text-align: left;
+        margin-top: 0px;
+    }
+    #OurPrtflo {
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 400px;
+    }
+    .box {
+        width: 100%;
+    }
+    html, body {
+        height: auto;
+        min-height: 100%; 
+        overflow-y: auto; 
+        overflow-x: hidden; 
+    }
+}
+
+</style>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<img src="image/logo.jpg" />
+		</div>
+
+		<div id="nav">
+			<ul>
+				<li><a href="#" id="home">HOME</a></li>
+				<li><a href="#" id="about">ABOUT SMASHINGDZINE</a></li>
+				<li><a href="#" id="services">OUR SERVICES</a></li>
+				<li><a href="#" id="portfolio">OUR PORTFOLIO</a></li>
+				<li><a href="#" id="blog">BLOG</a></li>
+				<li><a href="#" id="contact">CONTACT US</a></li>
+			</ul> 
+		</div>
+	</div>
+
+	<div id="banner">
+		<div id="slideshow">
+			<img src="image/banner-img.jpg" />
+		</div>
+
+		<div id="quick-quote">
+			<h2> Quick Quote </h2>
+			<form>
+				<span>Your Full Name:</span> <br>
+				<input type="text" id="in" /> <br>
+
+				<span>Email Address:</span> <br>
+				<input type="text" id="in" /> <br>
+
+				<span>What Are You Looking For:</span> <br>
+				<textarea id="in" rows="5"></textarea> <br>
+
+				<input type="submit" value="Submit" id="btn"> 
+			</form>
+		</div>
+	</div>
+
+	<div id="main">
+        <div id="AboutSD" class="box">
+        <h2><span class="ylw">About</span> SmashingDzine</h2>
+
+        <div class="placeholder"></div>
+            <p>Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do 
+            eiusmod tempor Incididunt ut labore et dolore magna aliqua. 
+            Utenim ad minim veniam, quis nostrud exercitation ullamco Iaboris<br>
+            <a href="#">Read More</a>
+        </div>
+
+        <div id="OurSrvs" class="box">
+	    <h2><span class="ylw">Our</span> Services</h2>
+
+        <div class="placeholder"></div>
+            <p>Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do 
+            eiusmod tempor Incididunt ut labore et dolore magna aliqua. 
+            Utenim ad minim veniam, quis nostrud exercitation ullamco Iaboris<br>
+            <a href="#">Read More</a>
+        </div>
+
+        <div id="OurPrtflo" class="box">
+	    <h2><span class="ylw">Our</span> Portfolio</h2>
+
+        <div class="placeholder"></div>
+            <p>Lorem ipsum dolor sit amet, consectur adipiscing elit, sed do 
+            eiusmod tempor Incididunt ut labore et dolore magna aliqua. 
+            Utenim ad minim veniam, quis nostrud exercitation ullamco Iaboris<br>
+            <a href="#">Read More</a>
+	    </div>
+    </div>
+
+	<footer id="footer">
+        <div id="footer-left">
+            Copyright 2020 SmashingDzine &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Privacy Policy<br> 
+            Home&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;About SmashingDzine&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Our Services&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+            Portfolio&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Blog&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Contact Us
+        </div>	
+
+        <form id="footer-right">
+            <span>Enter your email to subscribe to our RSS Updates</span> <br>
+            <input type="text" />
+            <input type="submit" value="Subscribe" id="sbscrb">
+        </form>
+    </footer>
+</div> <!-- end of wrapper -->
+</body>
+</html>
+

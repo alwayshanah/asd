@@ -1,0 +1,73 @@
+/* header */
+#usep, #container {
+    font: 12px tahoma;
+    line-height: 1.5em;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+#header {
+    background:#099; 
+    color: white;
+    margin:0 auto; 
+    padding:0px; 
+    width:100%;
+}
+
+#header h1 {
+    background: #099; 
+    max-width: 1200px; 
+    height: 250px; 
+    margin: 0 auto;
+}
+
+#header img, #header span {
+    float:left; 
+    padding-top: 5px;
+}
+
+#header span {
+    padding:110px 20px;
+}
+
+/* body */
+#main {
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+}
+
+h2 span, #vms h3 span {
+    color: skyblue;
+}
+
+#linklist h3 span {
+    color: black;
+}
+
+#linklist {
+    background: url('book.png') repeat-x top left skyblue;
+    max-width: 220px;
+    height: 728px;
+    padding: 40px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#intro {
+    max-width: 930px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+/* footer */
+#footer {
+    clear: both;
+    background: #099;
+    color: white;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,63 @@
+h1 {
+    display: flex; 
+    align-items: center; 
+    gap: 6px; 
+    font-style: bold;
+    background-color: #088F8F;
+    color: white;
+}
+
+h1::before {
+    content: ""; 
+    display: inline-block;
+    width: 200px; 
+    height: 200px; 
+    background-image: url('logo.png'); 
+    background-size: 180px 180px; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    font-family: tahoma;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+#header h2 span, #vision h3 span, #mission h3 span, #goals h3 span, h2 span {
+  color: skyblue;
+}
+
+#vision p.p3 {
+    margin: 20px; 
+    padding: 20px; 
+    background-color: skyblue; 
+    border: 2px dotted blue; 
+    background-image: url('spark.gif'); 
+    background-repeat: no-repeat;
+    background-size: 80px 80px; 
+    background-position: right center; 
+    padding-right: 100px; 
+}
+
+#header h2 span, #profile, #vms, #goals{
+    margin-left: 270px;
+}
+
+#linklist {
+    background-image: url('book.png');
+    float: left; 
+    width: 200px;
+    height: auto;
+    background-size: 50px; 
+    background-repeat: repeat-x;
+    background-color: skyblue; 
+    margin-right: 20px;
+    margin: 10px;
+    padding: 25px;
+    padding-top: 35px;
+    position: absolute; top: 220px;
+    left: 0px;
+}
+
+
